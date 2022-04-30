@@ -56,16 +56,30 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="64.0"/>
-    <comp lib="0" loc="(430,300)" name="Splitter"/>
-    <comp lib="0" loc="(80,230)" name="Clock"/>
-    <comp lib="5" loc="(340,160)" name="DotMatrix">
-      <a name="matrixrows" val="8"/>
+    <comp lib="5" loc="(160,260)" name="DotMatrix">
+      <a name="label" val="Monitor_1"/>
+      <a name="matrixcols" val="16"/>
+      <a name="matrixrows" val="16"/>
+      <a name="selloc" val="tr"/>
     </comp>
-    <comp loc="(310,230)" name="MyCounter"/>
-    <comp loc="(520,410)" name="EightBitAdder"/>
-    <wire from="(310,230)" to="(340,230)"/>
-    <wire from="(340,160)" to="(340,230)"/>
-    <wire from="(80,230)" to="(90,230)"/>
+    <comp lib="5" loc="(340,260)" name="DotMatrix">
+      <a name="label" val="Monitor_2"/>
+      <a name="matrixcols" val="16"/>
+      <a name="matrixrows" val="16"/>
+      <a name="selloc" val="tr"/>
+    </comp>
+    <comp lib="5" loc="(520,260)" name="DotMatrix">
+      <a name="label" val="Monitor_3"/>
+      <a name="matrixcols" val="16"/>
+      <a name="matrixrows" val="16"/>
+      <a name="selloc" val="tr"/>
+    </comp>
+    <comp lib="5" loc="(700,260)" name="DotMatrix">
+      <a name="label" val="Monitor_4"/>
+      <a name="matrixcols" val="16"/>
+      <a name="matrixrows" val="16"/>
+      <a name="selloc" val="tr"/>
+    </comp>
   </circuit>
   <circuit name="HalfAdder">
     <a name="appearance" val="logisim_evolution"/>
@@ -655,5 +669,81 @@
     <wire from="(920,330)" to="(920,390)"/>
     <wire from="(920,450)" to="(920,590)"/>
     <wire from="(920,90)" to="(920,150)"/>
+  </circuit>
+  <circuit name="OneOfTwoDecoder">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="OneOfTwoDecoder"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="64.0"/>
+    <comp lib="0" loc="(120,140)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(120,70)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(220,270)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="Y0"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(300,270)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="Y1"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(370,270)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="Y2"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(440,270)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="Y3"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(170,160)" name="NOT Gate"/>
+    <comp lib="1" loc="(170,90)" name="NOT Gate"/>
+    <comp lib="1" loc="(220,260)" name="AND Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(300,260)" name="AND Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(370,260)" name="AND Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(440,260)" name="AND Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <wire from="(120,140)" to="(120,160)"/>
+    <wire from="(120,140)" to="(390,140)"/>
+    <wire from="(120,160)" to="(140,160)"/>
+    <wire from="(120,70)" to="(120,90)"/>
+    <wire from="(120,70)" to="(280,70)"/>
+    <wire from="(120,90)" to="(140,90)"/>
+    <wire from="(170,160)" to="(240,160)"/>
+    <wire from="(170,90)" to="(200,90)"/>
+    <wire from="(200,90)" to="(200,210)"/>
+    <wire from="(200,90)" to="(350,90)"/>
+    <wire from="(220,260)" to="(220,270)"/>
+    <wire from="(240,160)" to="(240,210)"/>
+    <wire from="(240,160)" to="(320,160)"/>
+    <wire from="(280,70)" to="(280,210)"/>
+    <wire from="(280,70)" to="(420,70)"/>
+    <wire from="(300,260)" to="(300,270)"/>
+    <wire from="(320,160)" to="(320,210)"/>
+    <wire from="(350,90)" to="(350,210)"/>
+    <wire from="(370,260)" to="(370,270)"/>
+    <wire from="(390,140)" to="(390,210)"/>
+    <wire from="(390,140)" to="(460,140)"/>
+    <wire from="(420,70)" to="(420,210)"/>
+    <wire from="(440,260)" to="(440,270)"/>
+    <wire from="(460,140)" to="(460,210)"/>
   </circuit>
 </project>
