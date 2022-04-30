@@ -55,31 +55,104 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="64.0"/>
-    <comp lib="5" loc="(160,260)" name="DotMatrix">
-      <a name="label" val="Monitor_1"/>
-      <a name="matrixcols" val="16"/>
-      <a name="matrixrows" val="16"/>
-      <a name="selloc" val="tr"/>
+    <a name="simulationFrequency" val="2.0"/>
+    <comp lib="0" loc="(1110,920)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
     </comp>
-    <comp lib="5" loc="(340,260)" name="DotMatrix">
+    <comp lib="0" loc="(1190,690)" name="Transistor">
+      <a name="facing" val="north"/>
+      <a name="selloc" val="bl"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(1240,690)" name="Transistor">
+      <a name="facing" val="north"/>
+      <a name="selloc" val="bl"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(1290,690)" name="Transistor">
+      <a name="facing" val="north"/>
+      <a name="selloc" val="bl"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(1340,690)" name="Transistor">
+      <a name="facing" val="north"/>
+      <a name="selloc" val="bl"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(1420,760)" name="Clock"/>
+    <comp lib="0" loc="(1700,760)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(790,780)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(790,780)" name="Splitter">
+      <a name="spacing" val="2"/>
+    </comp>
+    <comp lib="5" loc="(1030,610)" name="DotMatrix">
       <a name="label" val="Monitor_2"/>
       <a name="matrixcols" val="16"/>
       <a name="matrixrows" val="16"/>
-      <a name="selloc" val="tr"/>
     </comp>
-    <comp lib="5" loc="(520,260)" name="DotMatrix">
+    <comp lib="5" loc="(1210,610)" name="DotMatrix">
       <a name="label" val="Monitor_3"/>
       <a name="matrixcols" val="16"/>
       <a name="matrixrows" val="16"/>
-      <a name="selloc" val="tr"/>
     </comp>
-    <comp lib="5" loc="(700,260)" name="DotMatrix">
+    <comp lib="5" loc="(1390,610)" name="DotMatrix">
       <a name="label" val="Monitor_4"/>
       <a name="matrixcols" val="16"/>
       <a name="matrixrows" val="16"/>
-      <a name="selloc" val="tr"/>
     </comp>
+    <comp lib="5" loc="(850,610)" name="DotMatrix">
+      <a name="label" val="Monitor_1"/>
+      <a name="matrixcols" val="16"/>
+      <a name="matrixrows" val="16"/>
+    </comp>
+    <comp loc="(1080,750)" name="OneOfTwoDecoder"/>
+    <comp loc="(1650,760)" name="TwoBitCounter"/>
+    <wire from="(1080,750)" to="(1160,750)"/>
+    <wire from="(1080,770)" to="(1210,770)"/>
+    <wire from="(1080,790)" to="(1260,790)"/>
+    <wire from="(1080,810)" to="(1310,810)"/>
+    <wire from="(1110,600)" to="(1120,600)"/>
+    <wire from="(1110,920)" to="(1190,920)"/>
+    <wire from="(1120,600)" to="(1120,610)"/>
+    <wire from="(1130,610)" to="(1130,630)"/>
+    <wire from="(1130,630)" to="(1240,630)"/>
+    <wire from="(1160,710)" to="(1160,750)"/>
+    <wire from="(1160,710)" to="(1170,710)"/>
+    <wire from="(1190,650)" to="(1190,690)"/>
+    <wire from="(1190,730)" to="(1190,920)"/>
+    <wire from="(1190,920)" to="(1240,920)"/>
+    <wire from="(1210,710)" to="(1210,770)"/>
+    <wire from="(1210,710)" to="(1220,710)"/>
+    <wire from="(1240,630)" to="(1240,690)"/>
+    <wire from="(1240,730)" to="(1240,920)"/>
+    <wire from="(1240,920)" to="(1290,920)"/>
+    <wire from="(1260,710)" to="(1260,790)"/>
+    <wire from="(1260,710)" to="(1270,710)"/>
+    <wire from="(1290,610)" to="(1290,690)"/>
+    <wire from="(1290,730)" to="(1290,920)"/>
+    <wire from="(1290,920)" to="(1340,920)"/>
+    <wire from="(1310,710)" to="(1310,810)"/>
+    <wire from="(1310,710)" to="(1320,710)"/>
+    <wire from="(1340,660)" to="(1340,690)"/>
+    <wire from="(1340,660)" to="(1400,660)"/>
+    <wire from="(1340,730)" to="(1340,920)"/>
+    <wire from="(1400,610)" to="(1400,660)"/>
+    <wire from="(1420,760)" to="(1430,760)"/>
+    <wire from="(1650,760)" to="(1700,760)"/>
+    <wire from="(810,750)" to="(860,750)"/>
+    <wire from="(810,770)" to="(860,770)"/>
+    <wire from="(990,610)" to="(990,650)"/>
+    <wire from="(990,650)" to="(1190,650)"/>
   </circuit>
   <circuit name="HalfAdder">
     <a name="appearance" val="logisim_evolution"/>
@@ -683,25 +756,25 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="A"/>
     </comp>
-    <comp lib="0" loc="(220,270)" name="Pin">
+    <comp lib="0" loc="(220,280)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="north"/>
       <a name="label" val="Y0"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(300,270)" name="Pin">
+    <comp lib="0" loc="(300,280)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="north"/>
       <a name="label" val="Y1"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(370,270)" name="Pin">
+    <comp lib="0" loc="(370,280)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="north"/>
       <a name="label" val="Y2"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(440,270)" name="Pin">
+    <comp lib="0" loc="(440,280)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="north"/>
       <a name="label" val="Y3"/>
@@ -709,17 +782,20 @@
     </comp>
     <comp lib="1" loc="(170,160)" name="NOT Gate"/>
     <comp lib="1" loc="(170,90)" name="NOT Gate"/>
-    <comp lib="1" loc="(220,260)" name="AND Gate">
+    <comp lib="1" loc="(220,270)" name="NAND Gate">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="1" loc="(300,260)" name="AND Gate">
+    <comp lib="1" loc="(300,270)" name="NAND Gate">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="1" loc="(370,260)" name="AND Gate">
+    <comp lib="1" loc="(370,270)" name="NAND Gate">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="1" loc="(440,260)" name="AND Gate">
+    <comp lib="1" loc="(440,270)" name="NAND Gate">
       <a name="facing" val="south"/>
+    </comp>
+    <comp lib="8" loc="(138,34)" name="Text">
+      <a name="text" val="OneOfTwoDecoder: Not"/>
     </comp>
     <wire from="(120,140)" to="(120,160)"/>
     <wire from="(120,140)" to="(390,140)"/>
@@ -731,19 +807,66 @@
     <wire from="(170,90)" to="(200,90)"/>
     <wire from="(200,90)" to="(200,210)"/>
     <wire from="(200,90)" to="(350,90)"/>
-    <wire from="(220,260)" to="(220,270)"/>
+    <wire from="(220,270)" to="(220,280)"/>
     <wire from="(240,160)" to="(240,210)"/>
     <wire from="(240,160)" to="(320,160)"/>
     <wire from="(280,70)" to="(280,210)"/>
     <wire from="(280,70)" to="(420,70)"/>
-    <wire from="(300,260)" to="(300,270)"/>
+    <wire from="(300,270)" to="(300,280)"/>
     <wire from="(320,160)" to="(320,210)"/>
     <wire from="(350,90)" to="(350,210)"/>
-    <wire from="(370,260)" to="(370,270)"/>
+    <wire from="(370,270)" to="(370,280)"/>
     <wire from="(390,140)" to="(390,210)"/>
     <wire from="(390,140)" to="(460,140)"/>
     <wire from="(420,70)" to="(420,210)"/>
-    <wire from="(440,260)" to="(440,270)"/>
+    <wire from="(440,270)" to="(440,280)"/>
     <wire from="(460,140)" to="(460,210)"/>
+  </circuit>
+  <circuit name="TwoBitCounter">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="TwoBitCounter"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(250,220)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(260,90)" name="Constant">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(540,230)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="D"/>
+      <a name="output" val="true"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(540,230)" name="Splitter">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="4" loc="(290,120)" name="J-K Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(420,120)" name="J-K Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(250,220)" to="(260,220)"/>
+    <wire from="(260,130)" to="(260,150)"/>
+    <wire from="(260,130)" to="(280,130)"/>
+    <wire from="(260,150)" to="(280,150)"/>
+    <wire from="(260,170)" to="(260,220)"/>
+    <wire from="(260,170)" to="(280,170)"/>
+    <wire from="(260,220)" to="(410,220)"/>
+    <wire from="(260,90)" to="(260,130)"/>
+    <wire from="(340,130)" to="(360,130)"/>
+    <wire from="(360,130)" to="(360,240)"/>
+    <wire from="(360,130)" to="(410,130)"/>
+    <wire from="(360,240)" to="(520,240)"/>
+    <wire from="(410,130)" to="(410,150)"/>
+    <wire from="(410,130)" to="(420,130)"/>
+    <wire from="(410,170)" to="(410,220)"/>
+    <wire from="(470,130)" to="(490,130)"/>
+    <wire from="(490,130)" to="(490,250)"/>
+    <wire from="(490,250)" to="(520,250)"/>
   </circuit>
 </project>
