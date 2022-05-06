@@ -603,15 +603,9 @@
       <a name="fanout" val="4"/>
       <a name="incoming" val="64"/>
     </comp>
-    <comp lib="0" loc="(560,580)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Monitor"/>
-    </comp>
-    <comp lib="0" loc="(560,640)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="CH"/>
+    <comp lib="0" loc="(550,810)" name="Constant">
+      <a name="value" val="0x0"/>
+      <a name="width" val="2"/>
     </comp>
     <comp lib="0" loc="(580,300)" name="Splitter">
       <a name="appear" val="right"/>
@@ -682,6 +676,13 @@
       <a name="fanout" val="4"/>
       <a name="incoming" val="64"/>
     </comp>
+    <comp lib="0" loc="(590,790)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="1"/>
+      <a name="facing" val="west"/>
+      <a name="incoming" val="4"/>
+    </comp>
     <comp lib="0" loc="(620,300)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="bit1" val="0"/>
@@ -751,11 +752,7 @@
       <a name="fanout" val="4"/>
       <a name="incoming" val="64"/>
     </comp>
-    <comp lib="0" loc="(660,600)" name="Constant">
-      <a name="value" val="0x0"/>
-      <a name="width" val="2"/>
-    </comp>
-    <comp lib="0" loc="(660,720)" name="Constant">
+    <comp lib="0" loc="(660,820)" name="Constant">
       <a name="value" val="0x0"/>
       <a name="width" val="2"/>
     </comp>
@@ -827,14 +824,7 @@
       <a name="fanout" val="4"/>
       <a name="incoming" val="64"/>
     </comp>
-    <comp lib="0" loc="(700,580)" name="Splitter">
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="1"/>
-      <a name="bit3" val="1"/>
-      <a name="facing" val="west"/>
-      <a name="incoming" val="4"/>
-    </comp>
-    <comp lib="0" loc="(700,700)" name="Splitter">
+    <comp lib="0" loc="(700,790)" name="Splitter">
       <a name="bit1" val="0"/>
       <a name="bit2" val="1"/>
       <a name="bit3" val="1"/>
@@ -1199,27 +1189,54 @@
       <a name="select" val="2"/>
       <a name="width" val="64"/>
     </comp>
+    <comp lib="5" loc="(1120,480)" name="DotMatrix">
+      <a name="matrixcols" val="2"/>
+      <a name="matrixrows" val="10"/>
+    </comp>
     <comp lib="5" loc="(1210,480)" name="DotMatrix">
       <a name="matrixcols" val="16"/>
       <a name="matrixrows" val="16"/>
       <a name="selloc" val="tr"/>
+    </comp>
+    <comp lib="5" loc="(1370,480)" name="DotMatrix">
+      <a name="matrixcols" val="2"/>
+      <a name="matrixrows" val="10"/>
     </comp>
     <comp lib="5" loc="(460,480)" name="DotMatrix">
       <a name="matrixcols" val="16"/>
       <a name="matrixrows" val="16"/>
       <a name="selloc" val="tr"/>
     </comp>
-    <comp lib="5" loc="(700,560)" name="Hex Digit Display">
-      <a name="decimalPoint" val="false"/>
+    <comp lib="5" loc="(560,580)" name="Button">
+      <a name="facing" val="west"/>
     </comp>
-    <comp lib="5" loc="(700,680)" name="Hex Digit Display">
+    <comp lib="5" loc="(560,640)" name="Button">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="5" loc="(590,770)" name="Hex Digit Display">
       <a name="decimalPoint" val="false"/>
+      <a name="label" val="Monitor"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp lib="5" loc="(620,480)" name="DotMatrix">
+      <a name="matrixcols" val="2"/>
+      <a name="matrixrows" val="10"/>
+    </comp>
+    <comp lib="5" loc="(700,770)" name="Hex Digit Display">
+      <a name="decimalPoint" val="false"/>
+      <a name="label" val="Ch"/>
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(710,480)" name="DotMatrix">
       <a name="matrixcols" val="16"/>
       <a name="matrixrows" val="16"/>
       <a name="selloc" val="tr"/>
+    </comp>
+    <comp lib="5" loc="(730,610)" name="Button"/>
+    <comp lib="5" loc="(730,630)" name="Button"/>
+    <comp lib="5" loc="(870,480)" name="DotMatrix">
+      <a name="matrixcols" val="2"/>
+      <a name="matrixrows" val="10"/>
     </comp>
     <comp lib="5" loc="(960,480)" name="DotMatrix">
       <a name="matrixcols" val="16"/>
@@ -1229,15 +1246,20 @@
     <comp loc="(280,180)" name="Channel"/>
     <comp loc="(550,570)" name="TwoBitCounter"/>
     <comp loc="(550,630)" name="TwoBitCounter"/>
+    <comp loc="(950,610)" name="VolumeController"/>
     <wire from="(1080,170)" to="(1080,300)"/>
     <wire from="(1120,230)" to="(1120,300)"/>
+    <wire from="(1120,480)" to="(1130,480)"/>
+    <wire from="(1130,480)" to="(1130,630)"/>
     <wire from="(1200,40)" to="(1200,300)"/>
     <wire from="(1240,100)" to="(1240,300)"/>
     <wire from="(1330,160)" to="(1330,300)"/>
     <wire from="(1370,220)" to="(1370,300)"/>
-    <wire from="(260,610)" to="(260,710)"/>
+    <wire from="(1370,480)" to="(1380,480)"/>
+    <wire from="(1380,480)" to="(1380,610)"/>
+    <wire from="(260,610)" to="(260,870)"/>
     <wire from="(260,610)" to="(550,610)"/>
-    <wire from="(260,710)" to="(680,710)"/>
+    <wire from="(260,870)" to="(670,870)"/>
     <wire from="(280,180)" to="(300,180)"/>
     <wire from="(280,200)" to="(310,200)"/>
     <wire from="(280,220)" to="(320,220)"/>
@@ -1246,6 +1268,9 @@
     <wire from="(300,60)" to="(320,60)"/>
     <wire from="(310,120)" to="(310,200)"/>
     <wire from="(310,120)" to="(330,120)"/>
+    <wire from="(310,550)" to="(310,850)"/>
+    <wire from="(310,550)" to="(370,550)"/>
+    <wire from="(310,850)" to="(560,850)"/>
     <wire from="(320,180)" to="(320,220)"/>
     <wire from="(320,180)" to="(340,180)"/>
     <wire from="(320,630)" to="(320,640)"/>
@@ -1288,18 +1313,36 @@
     <wire from="(550,550)" to="(550,570)"/>
     <wire from="(550,550)" to="(680,550)"/>
     <wire from="(550,610)" to="(550,630)"/>
+    <wire from="(550,810)" to="(570,810)"/>
+    <wire from="(560,800)" to="(560,850)"/>
+    <wire from="(560,800)" to="(570,800)"/>
     <wire from="(580,190)" to="(580,300)"/>
+    <wire from="(590,770)" to="(590,790)"/>
     <wire from="(620,250)" to="(620,300)"/>
-    <wire from="(660,600)" to="(680,600)"/>
-    <wire from="(660,720)" to="(680,720)"/>
-    <wire from="(680,550)" to="(680,590)"/>
-    <wire from="(700,560)" to="(700,580)"/>
+    <wire from="(620,480)" to="(630,480)"/>
+    <wire from="(630,480)" to="(630,500)"/>
+    <wire from="(630,500)" to="(960,500)"/>
+    <wire from="(660,810)" to="(660,820)"/>
+    <wire from="(660,810)" to="(680,810)"/>
+    <wire from="(670,800)" to="(670,870)"/>
+    <wire from="(670,800)" to="(680,800)"/>
+    <wire from="(680,530)" to="(680,550)"/>
+    <wire from="(680,550)" to="(770,550)"/>
     <wire from="(700,60)" to="(700,300)"/>
-    <wire from="(700,680)" to="(700,700)"/>
+    <wire from="(700,770)" to="(700,790)"/>
+    <wire from="(730,650)" to="(770,650)"/>
     <wire from="(740,120)" to="(740,300)"/>
+    <wire from="(770,550)" to="(770,650)"/>
     <wire from="(830,180)" to="(830,300)"/>
     <wire from="(870,240)" to="(870,300)"/>
+    <wire from="(870,480)" to="(870,650)"/>
+    <wire from="(870,480)" to="(880,480)"/>
+    <wire from="(870,650)" to="(950,650)"/>
     <wire from="(950,50)" to="(950,300)"/>
+    <wire from="(950,610)" to="(1380,610)"/>
+    <wire from="(950,630)" to="(1130,630)"/>
+    <wire from="(950,670)" to="(960,670)"/>
+    <wire from="(960,500)" to="(960,670)"/>
     <wire from="(990,110)" to="(990,300)"/>
   </circuit>
   <circuit name="HalfAdder">
