@@ -2,11 +2,12 @@
 
 `MUX/DeMUX`와 를 이용하여 모니터를 선택하여 채널을 바꾸고 `Register`를 이용하여 볼륨을 조절하는 것을 `Logisim`의 `LedMatrix`로 시각적으로 시뮬레이션 한 프로젝트이다. 
 
-![Logisim-evolution v3.7.2](Images/2022-05-10 20-38-52.mkv_20220510_204035.gif)
+![2022-05-10 20-38-52 mkv_20220510_214215](https://user-images.githubusercontent.com/92268965/167630986-2d0ccbe2-5140-41c8-a065-6db1c3ed02b8.gif)
+
 
 ## 동영상
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QNlzW9RMW54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/embed/QNlzW9RMW54
 
 ## 기능
 
