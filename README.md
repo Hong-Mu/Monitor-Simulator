@@ -17,10 +17,10 @@ https://www.youtube.com/embed/QNlzW9RMW54
 
 모든 조작을 시행하는 버튼들의 모음
 
-- MonitorSelector: 모니터 선택
-- ChSelector: 채널 선택
-- Ach: 전체 모니터 선택
-- Up/Down: 볼륨 조절
+- `MonitorSelector`: 모니터 선택
+- `ChSelector`: 채널 선택
+- `Ach`: 전체 모니터 선택
+- `Up/Down`: 볼륨 조절
 
 ### 채널 조작
 
@@ -35,8 +35,6 @@ https://www.youtube.com/embed/QNlzW9RMW54
 `Ach` 비트가 `On(1)`일 경우 모든 모니터에 같은 채널 입력 
 
 ### 볼륨 조작
-
-![화면 캡처 2022-05-10 212931](Images/화면 캡처 2022-05-10 212931.png)
 
 `VolumeController`의 `Up/Down` 버튼을 이용해 현 모니터의 볼륨을 조절 가능
 
